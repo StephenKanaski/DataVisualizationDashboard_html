@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Comparative Weather Analysis Data Visualizations</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="
+    sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Dropdown Navbar with Links-->
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">WeatherAnalysisHome</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="windiness.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="city_data.html">Data</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 col-md-12">
+        <div class="project-descr">
+          <h1 class="text-center">Summary: Latitude vs. X</h1>
+          <hr>
+          <a href="temperature.html">
+            <img src="./Visualizations/SouthLat_vs_Temp.png" alt="Southern Latitudes vs. Max Temperature" id="landing-image">
+          </a>
+
+          <p>The objective of this project was to analyze the change in weather related phenomena in regards to the movement across latitudes. To accomplish this analysis, a weather and climate dataset from at least 500 cities was obtained using the OpenWeatherMap API.</p>
+          <p>The assembled dataset was then plotted using Matplotlib in order to visualize and analyze targeted weather aspects against latitude. These targeted phenomena included: max temperature, cloud cover, humidity, and wind speed. This site provides easy navigation between the source data, data visualizations, and analysis of trends and correlations. </p>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-12">
+        <div class="visplot">
+          <h2 class="visplot-header">Data Visualizations</h2>
+          <hr>
+          <div class="container-fluid">
+            <div class="col-9">
+              <a href="temperature.html">
+                <img src="./Visualizations/NorthLat_vs_Temp.png" class="img-thumbnail" alt="Northern Latitude vs. Max Temperature" id="visplot-img">
+              </a>
+            </div>
+            <div class="col-9">
+              <a href="humidity.html">
+                <img  src="./Visualizations/SouthLat_vs_Humidity.png" class="img-thumbnail" alt="Southern Latitude vs. Humidity" id="visplot-img">
+              </a>
+            </div>
+            <div class="col-9">
+              <a href="cloudiness.html">
+                <img src="./Visualizations/NorthLat_vs_Cloudiness.png" class="img-thumbnail" alt="Northern Latitude vs. Cloudiness" id="visplot-img">
+              </a>
+            </div>
+            <div class="col-9">
+              <a href="windiness.html">
+                <img src="./Visualizations/SouthLat_vs_WindSpeed.png" class="img-thumbnail" alt="Southern Latitude vs. Windiness" id="visplot-img">
+              </a>
+            </div>
+    
+          </div>
+      </div>
+  <!-- </div>
+  <br>
+  <br>
+
+  <div class="col-lg-12 col-md-12">
+    <div class="visplot">
+      <h2 class="text-center">Data Visualizations</h2>
+      <hr>
+      <div class="container-fluid">
+        <div class="col-lg-3 col-md-6">
+          <a href="temperature.html">
+            <img src="./Visualizations/NorthLat_vs_Temp.png" alt="Northern Latitude vs. Max Temperature" id="visplot-img">
+          </a>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <a href="temperature.html">
+            <img src="./Visualizations/SouthLat_vs_Temp.png" alt="Southern Latitude vs. Max Temperature" id="visplot-img">
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="
+  sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="
+  sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="
+  sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

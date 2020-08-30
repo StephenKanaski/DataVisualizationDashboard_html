@@ -1,0 +1,20 @@
+<style>
+
+#visplot-img {
+    float: center;
+    width: 100%;
+    height: 100%;
+}
+
+#visplot-img {
+    background-color: #FA8072;
+}
+
+.visplot {
+    background-color: #66CDAA;
+}
+
+.project-descr {
+    background-color: #FFDEAD;
+}
+</style>
