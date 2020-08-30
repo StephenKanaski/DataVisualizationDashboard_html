@@ -7,14 +7,30 @@
 }
 
 #visplot-img {
-    background-color: #FA8072;
+    background-color: #FFA07A;
+}
+
+#temp-imgage {
+    box-shadow: 10px 10px 5px;
 }
 
 .visplot {
     background-color: #66CDAA;
 }
 
-.project-descr {
+#landing-image {
+    box-shadow: 20px 20px 15px;
+}
+
+.visplot-content {
+    background-color: #66DCAA;
+}
+
+#visplot-image {
+    background-color: #FA8072;
+}
+
+.plot-content {
     background-color: #FFDEAD;
 }
 </style>
